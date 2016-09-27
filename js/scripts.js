@@ -4,8 +4,9 @@ $(document).ready(function() {
 
     blanks.forEach(function(blank) {
       var userInput = $("input#" + blank).val();
-      $("." + blank).text(userInput);
+      $("#unordered").append("<li>" + userInput + "</li>")
     });
+
     $('#list').show();
 
     event.preventDefault();
